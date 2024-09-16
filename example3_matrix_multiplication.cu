@@ -1,3 +1,10 @@
+#include <cuda_runtime.h>
+#include <device_launch_parameter.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <assert.h>
+#include <math.h>
+
 // Initialization function for matrix
 void init_matrix(int *a, int *b, int n){
     for (int i=0; i<n; i++){
